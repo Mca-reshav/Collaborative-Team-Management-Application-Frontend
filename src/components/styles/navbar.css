@@ -1,0 +1,65 @@
+/* Navbar container styling */
+.navbar {
+  background: linear-gradient(270deg, #ff7a00, #ff5e00);
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.nav-logo {
+  max-width: 150px;
+  height: auto;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation links container */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* Individual navigation links */
+.nav-links li {
+  cursor: pointer;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #ffe5d5;
+  transform: scale(1.1);
+}
+
+/* Active link styling */
+.nav-links li.active {
+  color: #ffe5d5;
+  font-weight: bold;
+  border-bottom: 2px solid #ffe5d5;
+  padding-bottom: 2px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .nav-logo {
+    max-width: 120px;
+  }
+}

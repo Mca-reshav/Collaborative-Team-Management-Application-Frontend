@@ -1,0 +1,60 @@
+/* TaskSpecific.css */
+
+/* Button */
+.back-btn {
+    background-color: #ff5e00;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .back-btn:hover {
+    background-color: #e65400;
+  }
+  
+  /* Paper */
+  .paper {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #ff5e00;
+  }
+  
+  /* Title */
+  .title {
+    font-weight: bold;
+    font-family: Poppins, sans-serif;
+    color: #333;
+  }
+  
+  /* Icon */
+  .title-icon {
+    margin-right: 0.5rem;
+    color: #ff5e00;
+  }
+  
+  /* Main Box */
+  .main-box {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    border-top: 1px solid #ff5e00;
+    padding-top: 1rem;
+  }
+  
+  /* Section Box */
+  .section-box {
+    width: 50%;
+    padding-right: 1rem;
+  }
+  
+  /* Text */
+  .task-text {
+    margin-top: 1rem;
+    color: #555;
+  }
+  
+  /* Typography */
+  .typography {
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  

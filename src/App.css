@@ -1,0 +1,64 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+h3 {
+  margin-left: 1rem;
+  color: #555;
+}
+
+h1, h3, h4, h5, h6, p, span, strong, b, table td, tr, thead, th, tbody, button, input[type="text"], label, div {
+  font-family: 'Poppins', sans-serif !important;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 94, 0, 0.1);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #ff5e00, #d94f00);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #e65500, #c04700);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent; 
+}
+
+.MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: #ff5e00 !important; 
+}
+
+.MuiOutlinedInput-root:hover fieldset {
+  border-color: #ff5e00 !important;
+}
+
+.MuiFormLabel-root.Mui-focused {
+  color: #ff5e00 !important;
+}
+
+.MuiInputBase-input.Mui-focused {
+  color: #ff5e00 !important;
+}
+
+.MuiFormHelperText-root {
+  color: #ff5e00 !important;
+}
+
+.MuiOutlinedInput-root[aria-invalid="true"] fieldset {
+  border-color: #ff5e00 !important;
+}
+
+.MuiFormHelperText-root[aria-live="assertive"] {
+  color: #ff5e00 !important; 
+}
+

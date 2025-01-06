@@ -1,0 +1,152 @@
+/* Main container splits the screen into two halves */
+.login-main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(270deg, #ff5e00, #ff9a4a); /* Gradient background */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Left container: Logo and Title */
+.login-left-container {
+  flex: 1;
+  background-color: rgba(255, 94, 0, 0.1); /* Light overlay for contrast */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.login-logo-container {
+  text-align: center;
+}
+
+.login-logo {
+  max-width: 100px;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.login-title {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* Right container: Login Form */
+.login-right-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.login-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0; /* Subtle border */
+}
+
+.login-heading {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form group */
+.login-form-group {
+  margin-bottom: 20px;
+}
+
+.MuiTextField-root {
+  width: 100%;
+}
+
+/* Submit button */
+.login-btn-submit {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #ff5e00, #d94f00); /* Orange gradient button */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn-submit:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.login-btn-submit:hover:not(:disabled) {
+  background: linear-gradient(135deg, #e65500, #c04700);
+}
+
+/* Register link */
+.login-register-link {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  color: #ff5e00;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.login-register-link span {
+  text-decoration: underline;
+}
+
+.login-register-link:hover span {
+  color: #d94f00;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .login-main-container {
+    flex-direction: column;
+  }
+
+  .login-left-container,
+  .login-right-container {
+    padding: 20px;
+  }
+
+  .login-logo {
+    max-width: 80px;
+  }
+
+  .login-title {
+    font-size: 1.3rem;
+    color: #333;
+    margin-top: 3rem;
+  }
+
+  .login-card {
+    padding: 25px 20px;
+    border-radius: 10px;
+  }
+
+  .login-heading {
+    font-size: 1.8rem;
+  }
+
+  .login-btn-submit {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .login-register-link {
+    font-size: 0.85rem;
+  }
+}
